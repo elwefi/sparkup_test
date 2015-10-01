@@ -1,0 +1,28 @@
+%h1 Liste finale des contacts traités
+%table.table.table-bordered
+  %tr
+    %th Prénom
+    %th Nom
+    %th Email
+ 
+  - @final_contacts.each do |contact| 
+    %tr
+      %td= contact[:first_name]
+      %td= contact[:last_name]
+      %td= contact[:email]
+
+
+%h1 Liste des contacts non affichés dans la liste finale
+%table.table.table-bordered
+  %tr
+    %th Prénom
+    %th Nom
+    %th Email
+    %th raison
+ 
+  - @fail_contacts.each do |contact| 
+    %tr
+      %td= contact[:first_name]
+      %td= contact[:last_name]
+      %td= contact[:email]
+      %td= contact[:reason]

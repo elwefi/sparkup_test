@@ -1,0 +1,5 @@
+%h2 Import Products
+= form_tag '/upload', multipart: true, remote: true do
+  = file_field_tag :file
+  = submit_tag "Import"
+
