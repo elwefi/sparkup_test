@@ -17,7 +17,9 @@ gem "haml-rails", "~> 0.9"
 gem "twitter-bootstrap-rails", "~> 3.2.0"
 gem 'devise', "~> 3.5.2"
 gem 'devise-bootstrap-views', "~> 0.0.6"
-gem 'roo'
+gem 'roo', "~> 2.1.1"
+gem 'kaminari', "~> 0.16.3"
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

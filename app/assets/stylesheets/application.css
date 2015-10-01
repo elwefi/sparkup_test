@@ -16,3 +16,10 @@
 .sgn_in_margin{
   margin-top: 25%
 }
+.container {
+    background-color: #F3F2F1;
+    height:100%;
+}
+html, body {
+    height:100%;
+}
