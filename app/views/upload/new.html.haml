@@ -1,5 +1,7 @@
-%h2 Import Products
-= form_tag '/upload', multipart: true, remote: true do
-  = file_field_tag :file
-  = submit_tag "Import"
+.panel.panel-info
+  .panel-heading Import Products
+  .panel-body
+    = form_tag '/upload', multipart: true, remote: true do
+      = file_field_tag :file
+      = submit_tag "Import"
 
