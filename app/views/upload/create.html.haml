@@ -1,30 +1,29 @@
-.panel.panel-success
-  .panel-heading Liste finale des contacts traités
-  .panel-body
-    %table.table.table-bordered
-      %tr
-        %th Prénom
-        %th Nom
-        %th Email
- 
-      - @final_contacts.each do |contact| 
+- if params[:file]
+  .panel.panel-success
+    .panel-heading Liste finale des contacts traités
+    .panel-body
+      %table.table.table-bordered
         %tr
-          %td= contact[:first_name]
-          %td= contact[:last_name]
-          %td= contact[:email]
-.panel.panel-danger
-  .panel-heading Liste des contacts non affichés dans la liste finale
-  .panel-body
-    %table.table.table-bordered
-      %tr
-        %th Prénom
-        %th Nom
-        %th Email
-        %th raison
- 
-      - @fail_contacts.each do |contact| 
+          %th Prénom
+          %th Nom
+          %th Email
+        - @final_contacts.each do |contact| 
+          %tr
+            %td= contact[:first_name]
+            %td= contact[:last_name]
+            %td= contact[:email]
+  .panel.panel-danger
+    .panel-heading Liste des contacts non affichés dans la liste finale
+    .panel-body
+      %table.table.table-bordered
         %tr
-          %td= contact[:first_name]
-          %td= contact[:last_name]
-          %td= contact[:email]
-          %td= contact[:reason]
+          %th Prénom
+          %th Nom
+          %th Email
+          %th raison
+        - @fail_contacts.each do |contact| 
+          %tr
+            %td= contact[:first_name]
+            %td= contact[:last_name]
+            %td= contact[:email]
+            %td= contact[:reason]

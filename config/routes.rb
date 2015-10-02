@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
-  resources :upload
-  root 'upload#new'
+  resources :upload, :only => :create
+  root 'upload#create'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
