@@ -23,7 +23,7 @@ class UploadController < ApplicationController
             @fail_contacts << {first_name: line[0], last_name: line[1], email: line[2],reason: "Nom Invalide" }
           # remove caractères invalides et mettre en majuscule le Nom et le Prénom
           else 
-            @final_contacts << {first_name: line[0].gsub(/(\W|\d)/, "").capitalize, last_name: line[1].gsub(/(\W|\d)/, "").capitalize, email: line[2]}
+            @final_contacts << {first_name: line[0].gsub(/[^A-Za-zéè]/, '').capitalize, last_name: line[1].gsub(/[^A-Za-zéè]/, '').capitalize, email: line[2]}
           end
 
         else
