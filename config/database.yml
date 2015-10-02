@@ -20,8 +20,13 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+#production:
+#  <<: *default
+#  database: db/production.sqlite3
 production:
+  database: dbj8r3cpktqbce
+  user: sxqyfqlortvtxl
+  password :  Ptqv8hbGtTZ2v580GLIZJsAzEr
   adapter: postgresql
   encoding: unicode
-  database: myapp_test
   pool: 5
