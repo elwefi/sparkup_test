@@ -25,7 +25,7 @@ test:
 #  database: db/production.sqlite3
 production:
   database: dbj8r3cpktqbce
-  user: sxqyfqlortvtxl
+  username: sxqyfqlortvtxl
   password :  Ptqv8hbGtTZ2v580GLIZJsAzEr
   adapter: postgresql
   encoding: unicode
